@@ -1,4 +1,4 @@
-# Introduction to Kafka Producer and Consumer in Spring Boot
+![image](https://github.com/user-attachments/assets/f20c6c28-75f9-4a65-9ef1-df9cbbcfb78d)# Introduction to Kafka Producer and Consumer in Spring Boot
 
 Apache Kafka is a distributed streaming platform commonly used for building real-time data pipelines and streaming applications. In a Spring Boot application, you can integrate Kafka to handle asynchronous messaging between microservices or components. In this document, we will implement a basic Kafka Producer to send messages to a Kafka topic and a Kafka Consumer to consume those messages.
 
@@ -240,6 +240,11 @@ To run Kafka locally:
    curl "http://localhost:8080/api/send?message=Message from producer"
    ```
    - The message "Message from producer" will be sent to the Kafka topic `spring-kafka-topic`.
+  
+   - ![image](https://github.com/user-attachments/assets/67cf89f9-1193-46d5-94cf-89047bec5737)
+  
+     
+
 
 3. Check the Producer Service Logs:
    - Producer service using REST API – sent message to topic – 
@@ -247,6 +252,10 @@ To run Kafka locally:
    [springboot-producer-kafka] [afka-producer-1] o.a.k.c.p.internals.TransactionManager : [Producer clientId=springboot-producer-kafka-producer-1] ProducerId set to 9001 with epoch 0
    Message Sent from Producer :Message from producer
    ```
+![image](https://github.com/user-attachments/assets/09f9ff5a-c53a-4c40-abc2-9d0c2db0d3c0)
+
+
+
 
 4. Check the Consumer Service Logs:
    - The Kafka Consumer should automatically receive the message and print it in the logs as "Received message: Message from producer".
@@ -255,11 +264,20 @@ To run Kafka locally:
    Message received at Consumer :Message from producer
    ```
 
-5. Check the Kafka Server Logs:
+   ![image](https://github.com/user-attachments/assets/c8bdea96-5d28-4ffe-84b5-255f767cbb10)
+
+   
+
+
+6. Check the Kafka Server Logs:
 
    ```
    Assignment received from leader consumer-consumer-group-1-3d866fb8-3bcd-4182-bbcd-58bbd854f5f6 for group consumer-group for generation 143. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
    ```
+
+   ![image](https://github.com/user-attachments/assets/6b3ea2b5-4faf-4fb9-9106-271636e806cd)
+   
+
 
 ## Conclusion
 
