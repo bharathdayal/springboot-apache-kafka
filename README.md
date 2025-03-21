@@ -257,6 +257,10 @@ To run Kafka locally:
 
 5. Check the Kafka Server Logs:
 
+   ```
+   Assignment received from leader consumer-consumer-group-1-3d866fb8-3bcd-4182-bbcd-58bbd854f5f6 for group consumer-group for generation 143. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+   ```
+
 ## Conclusion
 
 You now have a basic Spring Boot application with Kafka Producer and Consumer implementations. You can extend this by adding more advanced features like:
