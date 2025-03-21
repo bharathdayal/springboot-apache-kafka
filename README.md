@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f20c6c28-75f9-4a65-9ef1-df9cbbcfb78d)# Introduction to Kafka Producer and Consumer in Spring Boot
+# Introduction to Kafka Producer and Consumer in Spring Boot
 
 Apache Kafka is a distributed streaming platform commonly used for building real-time data pipelines and streaming applications. In a Spring Boot application, you can integrate Kafka to handle asynchronous messaging between microservices or components. In this document, we will implement a basic Kafka Producer to send messages to a Kafka topic and a Kafka Consumer to consume those messages.
 
